@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navigator{
+    position:fixed;
+    width:375px;
+    height:66px;
+    z-index: 66666;
+    background: url(../imgs/navigator.png);
+    bottom:0;
+}
+
+#gtmap{
+    position:fixed;
+    bottom:16px;
+    left:35px;
+    background: url(../imgs/gtmap.png);
+    width:50px;
+    height:20px;
+}
+
+#haunt{
+    position:fixed;
+    bottom:16px;
+    left:164px;
+    background: url(../imgs/haunt.png);
+    width:48px;
+    height:20px;
+}
+
+#collection{
+    position:fixed;
+    bottom:17px;
+    left:280px;
+    background: url(../imgs/collection.png);
+    width:67px;
+    height:20px;
+}
+
+/* map module*/
+
+#map{
+    background-color: #0c142a;
+    width:375px;
+    height:667px;
+}
+
+#map-header{
+    position:fixed;
+    top:0;
+    background: url(../imgs/mapheader.png);
+    width:375px;
+    height:77px;
+    z-index: 666;
+}
+
+#map-container {
+    position:absolute;
+    top:65px;
+    left:20px;
+    width: 740px;
+    height: 548px;
+    background: url(../imgs/mapbg.png);
+    background-size: cover;
+}
+
+.points {
+    border-radius: 50%;
+    position: absolute;
+}
+
+#urhere {
+    width: 6px;
+    height: 6px;
+    background: #f00;
+    animation: urhere-flash 1s infinite ease-in-out alternate;
+    box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.6);
+}
+
+.points-ghosts {
+    width: 6px;
+    height: 6px;
+    background: #ff0;
+    animation: ghosts-flash 1s infinite ease-in-out alternate;
+}
+
+.points-ghosts[ghost-found] {
+    background: #0f0;
+    animation: ghosts-found-flash 1s infinite ease-in-out alternate;
+}
+
+@keyframes urhere-flash {
+    from {
+        box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 8px 2px rgba(255, 0, 0, 0.2);
+    }
+}
+
+@keyframes ghosts-flash {
+    from {
+        box-shadow: 0 0 8px 5px rgba(255, 255, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 8px 2px rgba(255, 255, 0, 0.2);
+    }
+}
+
+@keyframes ghosts-found-flash {
+    from {
+        box-shadow: 0 0 8px 5px rgba(0, 255, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 8px 2px rgba(0, 255, 0, 0.2);
+    }
+}
