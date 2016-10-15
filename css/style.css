@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 375px;
 }
 
 #navigator{
@@ -43,8 +44,7 @@
 
 #map{
     background-color: #0c142a;
-    width:375px;
-    height:667px;
+    height:600px;
 }
 
 #map-header{
