@@ -42,9 +42,8 @@
 /* map module*/
 
 #map{
-    background-color: #0c142a;
-    width:375px;
-    height:667px;
+    height:100%;
+    width:100%;
 }
 
 #map-header{
@@ -56,14 +55,23 @@
     z-index: 666;
 }
 
-#map-container {
-    position:absolute;
+#map-container{
+    overflow: hidden;
+    position: absolute;
     top:65px;
     left:20px;
     width: 740px;
     height: 548px;
     background: url(../imgs/mapbg.png);
     background-size: cover;
+}
+
+#mapbg{
+    background-color: #0c142a;
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index: -666666;
 }
 
 .points {
